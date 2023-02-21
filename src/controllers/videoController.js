@@ -48,3 +48,11 @@ export const postEdit = (req, res) => {
 export const search = (req, res) => res.send("Search");
 export const upload = (req, res) => res.send("upload");
 export const remove = (req, res) => res.send("Remove");
+
+export const getUpload = (req, res) => {
+  return res.render("upload", { pageTitle: "Upload" });
+};
+export const postUpload = (req, res) => {
+  //여기에서 video를 videos array에 추가할 거임
+  return res.redirect("/");
+};
